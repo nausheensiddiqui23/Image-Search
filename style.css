@@ -1,5 +1,5 @@
 body{
-    background-color: #c3c353;
+    background-color: #e6e611;
     font-family: Arial, Helvetica, sans-serif;
     line-height: 1.6;
     margin: 0%;
@@ -24,13 +24,14 @@ p{
         justify-content: center;
         align-items: center;
         margin-bottom: 60px;
+        gap: 10px;
     }
     #search-input{
         width: 50%;
         max-width: 400px;
         padding: 10px 20px ;
         border: none;
-       box-shadow: 0 0 5px rgba(0,0,0,0.2);
+       box-shadow: 0 0 5px rgba(0,0,0,0.05);
      border-radius: 5px;
     font-size: 18px;
      color: #333;
@@ -42,12 +43,14 @@ p{
         color: wheat;
         border: none;
         font-size: 18px;
-    box-shadow: 0 0 5px  rgba(0,0,0,0.2);
-    cursor: pointer;
-    border-radius: 5px;
+        box-shadow: 0 0 5px  rgba(0,0,0,0.2);
+        cursor: pointer;
+        border-radius: 5px;
     }
-    #search-button : hover{
-        background-color : #3e8e41
+    #search-button:hover{
+        background-color : #e87dc8
+       
+        
     }
     .search-results{
         display: flex;
@@ -56,19 +59,20 @@ p{
         max-width: 1200px;
         margin: 0px;
        padding: 20px;
+       ;
     }
 
     .search-result{
         margin-bottom: 60px;
         width: 30%;
         border-radius: 5px; 
-        box-shadow: 0 0 5px rgba(0,0,0,0.2);
+        box-shadow: 0 0 5px rgba(118, 155, 66, 0.2);
         overflow: hidden;
-        
+        border: rgb(248, 247, 247) 1px solid;
     }
 
-    .search-result: hover img {
-        transform: scale(1.05);
+    .search-result:hover img {
+        transform: scale(1.07);
     }
     .search-result img {
         width: 100%;
@@ -84,7 +88,7 @@ p{
         transition: background-color 0.3s ease;
     }
 .search-result:hover a{
-    background-color: rgba(0, 0, 0, 2);
+    background-color: rgb(244, 241, 241);
 }
 
 #show-more-button{
@@ -98,10 +102,11 @@ p{
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
-    display: none;
+    
 }
 #show-more-button:hover{
     background-color: #005f73;
+    transform: scale(1.08);
 }
 
 
